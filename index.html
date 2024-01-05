@@ -201,17 +201,19 @@
             padding: 12px 0;
         }
 
-        
-        @media screen and (max-width: 1000px) {
+                @media screen and (max-width: 1000px) {
             body {
-                /* background-color: red; */
+               justify-content: center;
+               align-items: center;
             }
 
             nav {
                 background-color: rgb(1, 1, 33);
                 flex-direction: column;
             }
-
+             nav ul li{
+               margin: 8px ;
+             }
             .left a {
                 font-size:medium !important;
             }
@@ -247,13 +249,15 @@
                 align-items: center;
             }
             .rightSection{
-                width: 75% !important;
+                width: 85% !important;
             }
 
             .firstSection {
                 flex-direction: column-reverse;
             }
         }
+      
+       
     </style>
 </head>
 
