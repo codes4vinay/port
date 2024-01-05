@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: rgb(1, 1, 33);
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style-type: none;
+            margin: 0 23px;
+
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: red;
+            font-size: 1.1rem;
+        }
+
+        .left {
+            font-size: 1.8rem;
+        }
+
+        .left a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .left a:hover {
+            color: red;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            text-align: center;
+            padding: 1px;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            z-index: 1;
+            animation: fadeInDown 1s ease-out;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+            overflow: hidden;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .project {
+            margin-bottom: 20px;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s, transform 0.5s;
+        }
+
+        .project img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+
+        .project h2 {
+            color: #fff;
+            margin-top: 10px;
+        }
+
+        .project p {
+            color: #ccc;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .loading {
+            font-size: 24px;
+            text-align: center;
+            margin-top: 50px;
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+            50% {
+                opacity: 0;
+            }
+
+            @media screen and (max-width: 1000px) {
+                body {
+                justify-content: center;
+                align-items: center;
+                }
+                nav {
+                    background-color: rgb(1, 1, 33);
+                    flex-direction: column;
+                }
+
+                nav ul li {
+                    margin: 8px;
+                }
+
+                .left a {
+                    font-size: medium !important;
+                }
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Vinay Kumar - Projects</h1>
+        <nav>
+            <div class="left"><a href="index.html">Vinay Kumar's Portfolio</a></div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <div class="loading">Loading...</div>
+        <!-- Add a loading animation or placeholder here -->
+
+        <div class="project">
+            <!-- <img src="project1.jpg" alt="Project 1"> -->
+            <a href="https://vinaykumar.tech/stonepapergame.html"><h2>Stone Paper Game</h2></a>
+            <p>
+                Rock Paper Scissor Game<br>
+                Rock Paper Scissor Game based on HTML and CSS<br>
+                Skills: Cascading Style Sheets (CSS) · JavaScript · HTML<br>
+                Aug 2023 - Oct 2023
+            </p>
+        </div>
+
+        <div class="project">
+            <!-- <img src="project2.jpg" alt="Project 2"> -->
+            <a href="https://git.vinaykumar.tech/"><h2>Portfolio Website</h2></a>
+            <p>My Portfolio Website<br>
+                Skills: Cascading Style Sheets (CSS) · JavaScript · HTML<br>
+                Dec 2023 - Jan 2024</p>
+        </div>
+
+        
+
+        <!-- Add more projects as needed -->
+
+    </section>
+
+    <footer>
+        &copy; 2024 Vinay Kumar | All rights reserved
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const projects = document.querySelectorAll(".project");
+            const loading = document.querySelector(".loading");
+
+            setTimeout(() => {
+                loading.style.display = "none";
+                projects.forEach((project, index) => {
+                    setTimeout(() => {
+                        project.style.opacity = "1";
+                        project.style.transform = "translateY(0)";
+                    }, 200 * index);
+                });
+            }, 2000); // Simulating a loading time
+        });
+    </script>
+
+</body>
+
+</html>
