@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinay Kumar | Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(1, 1, 33);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(20, 20, 72);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style-type: none;
+            margin: 0 23px;
+
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: red;
+            font-size: 1.1rem;
+        }
+
+        main hr {
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 9px 84px;
+        }
+
+        .left {
+            font-size: 1.8rem;
+        }
+
+        .left a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .left a:hover {
+            color: red;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 110px 0;
+            align-items: center;
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .leftSection {
+            font-size: 2.5rem;
+            margin: 60px 0;
+        }
+        .leftSection .buttons{
+            padding: 5px;
+        }
+        .leftSection .btn{
+            padding: 12px;
+            background: #1e2167;
+            color: white;
+            border: 2px solid white;
+            border-radius: 28px;
+            cursor: pointer;
+        }
+
+
+        .rightSection img {
+            width: 80%;
+        }
+
+        .purple {
+            color: blueviolet;
+        }
+
+        .text-grey {
+            color: violet;
+        }
+
+        #element {
+            color: blueviolet;
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .secondSection h1 {
+            font-size: 1.9rem;
+        }
+
+        .secondSection .box {
+            background: white;
+            width: 77vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondSection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 96px;
+        }
+
+        .image-top {
+            width: 40px;
+            position: relative;
+            top: -40px;
+            left: -10px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 75px;
+            width: 150px;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 86px;
+            color: gray;
+            width: 150px;
+            font-size: 12px;
+        }
+
+        .footer {
+            background-color: rgba(56, 13, 56, 0.789);
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+
+        .footer ul {
+            list-style: none;
+
+        }
+        footer .footer-second a{
+            text-decoration: none;
+            color: white;
+        }
+        footer .footer-second a:hover{
+            color: red;
+            font-size: 1.1rem;
+        }
+
+        .footer>div {
+            width: 223px;
+        }
+        footer .footer-rights{
+            text-align: center;
+            color: gray;
+            padding: 12px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left"><a href="index.html">Vinay Kumar's Portfolio</a></div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">Hi , my name is <span class="purple">Vinay</span>
+                <div>and I am a passionate</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn">My Resume</button>
+                    <button class="btn">My Github</button>
+                    <button class="btn">My Linkedin</button>
+                    <button class="btn">My Email</button>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="developer.png" alt="Developer">
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span class="text-grey">What I have done so far...</span>
+            <h1>Work Experience</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="developer1.png" alt="">
+                    <div class="vertical-title">
+                        HTML Developer (2022-2023)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora saepe sequi reiciendis
+                        perferendis alias velit!
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="developer1.png" alt="">
+                    <div class="vertical-title">
+                        CSS Developer (2022-2023)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora saepe sequi reiciendis
+                        perferendis alias velit!
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="developer2.png" alt="">
+                    <div class="vertical-title">
+                        Java Developer (2022-2023)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora saepe sequi reiciendis
+                        perferendis alias velit!
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="developer2.png" alt="">
+                    <div class="vertical-title">
+                        JS Developer (2022-2023)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora saepe sequi reiciendis
+                        perferendis alias velit!
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="developer3.png" alt="">
+                    <div class="vertical-title">
+                        Php Developer (2022-2023)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora saepe sequi reiciendis
+                        perferendis alias velit!
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="developer3.png" alt="">
+                    <div class="vertical-title">
+                        React.js Developer (2022-2023)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora saepe sequi reiciendis
+                        perferendis alias velit!
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Vinay's Developer Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                </ul>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li><a href="/">Linkedin</a></li>
+                    <li><a href="/">Github</a></li>
+                    <li><a href="/">Email</a></li>
+                    <li><a href="/">Phone</a></li>
+                </ul>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li><a href="/">Website</a></li>
+                    <li><a href="/">Instagram</a></li>
+                    <li><a href="/">Facebook</a></li>
+                    <li><a href="/">Newsletter</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+          Copyright &copy; 2024 www.vinaykumar.tech | All Rights Reserved
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Blogger', 'Digital Marketer...'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
