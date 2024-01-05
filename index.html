@@ -200,6 +200,60 @@
             color: gray;
             padding: 12px 0;
         }
+
+        
+        @media screen and (max-width: 1000px) {
+            body {
+                /* background-color: red; */
+            }
+
+            nav {
+                background-color: rgb(1, 1, 33);
+                flex-direction: column;
+            }
+
+            .left a {
+                font-size:medium !important;
+            }
+
+            .box {
+                flex-direction: column;
+            }
+
+            .secondSection .vertical {
+                height: unset;
+            }
+
+            .secondSection .box {
+                width: 50vw;
+            }
+
+            .vertical-title {
+                left: 45px;
+            }
+
+            .vertical-desc {
+                left: 45px;
+            }
+
+            footer {
+                display: none;
+            }
+            .leftSection{
+                width: 100% !important;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .rightSection{
+                width: 75% !important;
+            }
+
+            .firstSection {
+                flex-direction: column-reverse;
+            }
+        }
     </style>
 </head>
 
