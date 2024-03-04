@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style-type: none;
+            margin: 0 23px;
+
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: red;
+            font-size: 1.1rem;
+        }
+
+        .left {
+            font-size: 1.8rem;
+        }
+
+        .left a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .left a:hover {
+            color: red;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media only screen and (max-width: 600px) {
+            body {
+                margin: 0;
+                padding: 0;
+            }
+
+            .container {
+                padding: 10px;
+            }
+
+            @media screen and (max-width: 1000px) {
+                body {
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                nav {
+                    background-color: rgb(1, 1, 33);
+                    flex-direction: column;
+                }
+
+                nav ul li {
+                    margin: 8px;
+                }
+
+                .left a {
+                    font-size: medium !important;
+                }
+
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="left"><a href="index.html"></a></div>
+        <div class="right">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>About Me</h1>
+        <br>
+        <br>
+        <br>
+        <h1 style="color: aqua;">Attending Indian Institute of Information Technology Una | @iiitu'27 | Frontend Web
+            Developer | Java DSA | C
+            programming</h1>
+        <br>
+        <h2>I am a dedicated and experienced frontend developer proficient in Java, HTML, PhpMyAdmin, MySQL, and C
+            programming.
+            With a strong passion for creating visually appealing and user-friendly websites, I strive to deliver
+            high-quality
+            projects that exceed client expectations. Additionally, my knowledge of SQL and PhpMyAdmin allows me to
+            effectively
+            manage and manipulate databases, ensuring optimal performance. I am eager to contribute my skills and
+            expertise to
+            a dynamic organization where I can make a meaningful impact.</h2>
+    </div>
+    <footer>
+        &copy; 2024 Vinay Kumar | All rights reserved
+    </footer>
+</body>
+
+</html>
