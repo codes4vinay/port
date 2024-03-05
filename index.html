@@ -203,21 +203,22 @@
         }
 
         @media screen and (max-width: 1000px) {
-            body {
-                justify-content: center;
-                align-items: center;
-                 background-color: rgb(4, 4, 43);
-            }
-             body {
-            background-color: rgb(4, 4, 43) !important;
+              body {
+                  display:flex;
+                  align-items:center;
+                  justify-content:center;
+            background-color: rgb(4, 4, 43);
             color: white;
             font-family: 'Poppins', sans-serif;
         }
 
-            nav {
-                background-color: gray;
-                flex-direction: column;
-            }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(222, 214, 214);
+        }
 
             nav ul li {
                 margin: 8px;
